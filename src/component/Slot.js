@@ -4,7 +4,7 @@ export default class Slot extends Component {
   constructor(props){
     super(props);
     this.state={
-      winner:,
+      winner:null,
     }
   }
     isWinner(symbol1, symbol2, symbol3) {
