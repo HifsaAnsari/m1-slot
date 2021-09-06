@@ -4,7 +4,7 @@ export default class Slot extends Component {
   constructor(props){
     super(props);
     this.state={
-      winner:null,
+      winner:,
     }
   }
     isWinner(symbol1, symbol2, symbol3) {
@@ -12,8 +12,10 @@ export default class Slot extends Component {
             }
            
             handleClick = () => {
-          this.setState( console.log("hi"))
-              console.log(`you: ${ this.state.winner}`);
+          this.setState(()=>{
+            console.log(`you: ${ this.state.winner}`);
+          })
+            
             }
            
     render() {
