@@ -13,9 +13,9 @@ export default class Slot extends Component {
            
             handleClick = () => {
           this.setState( console.log("hi"))
-              console.log(`you losser: ${ this.state.winner}`);
+              console.log(`you: ${ this.state.winner}`);
             }
-          
+           
     render() {
         const {symbol1, symbol2, symbol3} = this.props;
       this.state.winner = this.isWinner(symbol1, symbol2, symbol3) ? 'Winner' : 'Loser';
