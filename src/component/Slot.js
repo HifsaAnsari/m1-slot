@@ -12,8 +12,8 @@ export default class Slot extends Component {
             }
            
             handleClick = () => {
-          this.setState(  console.log(`you losser: ${ this.state.winner}`));
-             
+          this.setState( console.log("hi"))
+              console.log(`you losser: ${ this.state.winner}`);
             }
           
     render() {
